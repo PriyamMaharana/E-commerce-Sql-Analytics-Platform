@@ -1,8 +1,8 @@
 # Migration Issues Log
 ## Project: E-Commerce SQL Analytics Platform
-**Tech Stack:** Python 3.13 · SQL Server 2025 Developer Edition · pyodbc · Pandas · REST API
-**Dataset:** Brazilian E-Commerce (Olist) — 112,650 rows
-**Date:** April 2026
+**Tech Stack:** Python 3.13 · SQL Server 2025 Developer Edition · pyodbc · Pandas · REST API\
+**Dataset:** Brazilian E-Commerce (Olist) — 112,650 rows\
+**Date:** April 2026\
 **Status:** All issues resolved ✓
 
 ---
