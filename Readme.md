@@ -325,5 +325,5 @@ alone, dropping the cost from a full table scan to an index seek.
 
 ## Challenges and Solutions
 
-See [migration_issues_log.md](migration_issues_log.md) for all
+See [migration_issues_log.md](migration_issue_log.md) for all
 bugs hit during development with root causes and fixes.
