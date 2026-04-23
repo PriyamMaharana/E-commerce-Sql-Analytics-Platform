@@ -11,17 +11,24 @@ import uuid
 from datetime import datetime
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import sys
 
-## logging setup
-os.makedirs('logs', exist_ok=True)
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s | %(levelname)s | %(message)s',
-    handlers=[
-        logging.FileHandler('logs/load_data.log'),
-        logging.StreamHandler()
-    ]
+# File handler — utf-8 supports emoji
+file_handler = logging.FileHandler(
+    'logs/dq_framework.log', encoding='utf-8'
 )
+file_handler.setFormatter(logging.Formatter(
+    '%(asctime)s | %(levelname)s | %(message)s'
+))
+
+# Stream handler — no emoji, cp1252 safe
+stream_handler = logging.StreamHandler(sys.stdout)
+stream_handler.setFormatter(logging.Formatter(
+    '%(asctime)s | %(levelname)s | %(message)s'
+))
+
+logging.basicConfig(level=logging.INFO,
+                    handlers=[file_handler, stream_handler])
 logger = logging.getLogger(__name__)
 
 ## database connection
@@ -105,12 +112,15 @@ class DataQualityChecker:
             (self.total_rows - failed) / max(self.total_rows, 1) * 100, 2
         )
         status = 'PASS' if pass_rate >= threshold else 'FAIL'
+        # REPLACE THIS:
         icon = '✅' if status == 'PASS' else '❌'
-        
+        logger.info(f"{icon} {self.table_name}...")
+
+        # WITH THIS — ascii safe:
+        icon = 'PASS' if status == 'PASS' else 'FAIL'
         logger.info(
-            f"{icon} {self.table_name}.{col} "
-            f"[{rule}] -> {status} "
-            f"({pass_rate}% / threshold {threshold}%)"
+            f"[{icon}] {self.table_name}.{col} "
+            f"[{rule}] ({pass_rate}% / threshold {threshold}%)"
         )
         
         cursor = self.conn.cursor()
@@ -128,7 +138,7 @@ class DataQualityChecker:
         )
         self.conn.commit()
         
-        self.resultd.append({
+        self.results.append({
             'table': self.table_name,
             'column': col,
             'rule': rule,
@@ -145,7 +155,7 @@ class DataQualityChecker:
     def check_not_null(self, col, threshold=95.0, severity='critical'):
         cursor = self.conn.cursor()
         cursor.execute(
-            f""" select count(*) from {self.table_anme}
+            f""" select count(*) from {self.table_name}
             where {col} is null
             """
         )
@@ -249,7 +259,6 @@ class DataQualityChecker:
             f"(no match in {ref_table})"
         )
         
-    
     ### rule 6: date logic
     ## delivery_date must be >= order_date
     def check_date_logic(self, date_col1, date_col2, operator='>=',
@@ -271,7 +280,6 @@ class DataQualityChecker:
             f"{violations:,} date logic violations"
         )
         
-    
     def get_results(self):
         return self.results
     
@@ -309,8 +317,8 @@ def run_dq_checks(run_id=None):
         threshold=95.0, severity='warning'
     )
     fact.check_allowed_values(
-        'order_status', ['deliverd', 'shipped', 'canceled', 'processing'
-                         'invoiced', 'created', 'approved'],
+        'order_status', ['delivered', 'shipped', 'canceled', 'processing'
+                         'invoiced', 'unavailable', 'approved'],
         threshold=99.0
     )
     fact.check_referential_integrity(
@@ -324,3 +332,53 @@ def run_dq_checks(run_id=None):
     )
     all_results.extend(fact.get_results())
     
+    ## check 2: dim_customer
+    logger.info(f"\n--- dim_customer ---") 
+    cust = DataQualityChecker('dim_customer', run_id, conn)
+    cust.check_not_null('customer_id', threshold=100.0)
+    cust.check_no_duplicates('customer_id', threshold=100.0)
+    cust.check_not_null('state', threshold=95.0, severity='warning')
+    all_results.extend(cust.get_results())
+    
+    ## check 3: dim_product
+    logger.info(f"\n--- dim_product ---")
+    prod = DataQualityChecker('dim_product', run_id, conn)
+    prod.check_not_null('product_id', threshold=100.0)
+    prod.check_no_duplicates('product_id', threshold=100.0)
+    prod.check_value_range('weight_g', min_val=0, threshold=95.0, severity='warning')
+    all_results.extend(prod.get_results())
+    
+    ### Save Run Summary
+    df = pd.DataFrame(all_results)
+    total = len(df)
+    passed = len(df[df['status'] == 'PASS'])
+    failed = len(df[df['status'] == 'FAIL'])
+    critical = len(df[
+        (df['status'] == 'FAIL') &
+        (df['severity'] == 'critical')
+    ])
+    overall = (
+        'FAILED' if critical > 0 else
+        'WARNING' if failed > 0 else
+        'PASSED'
+    )
+    
+    cursor = conn.cursor()
+    query = """
+    insert into dq_run_summary(run_id, total_checks, passed_checks,
+    failed_checks, critical_fails, overall_status) values(?,?,?,?,?,?)
+    """
+    cursor.execute(
+        query, run_id, total, passed, failed, critical, overall
+    )
+    conn.commit()
+    
+    logger.info(f"\n{'='*60}")
+    logger.info(f"DQ Run Complete: {run_id}")
+    logger.info(f"Total: {total} | Pass: {passed} | Fail: {failed} | Critical: {critical}")
+    logger.info(f"Overall Status: {overall}")
+    logger.info(f"{'='*60}")
+    
+    conn.close()
+    return run_id, overall, df
+

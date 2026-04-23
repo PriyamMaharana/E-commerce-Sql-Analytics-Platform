@@ -1,0 +1,432 @@
+2026-04-19 15:09:20,484 | INFO | ============================================================
+2026-04-19 15:09:20,484 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 15:09:20,484 | INFO | Started: 2026-04-19 15:09:20.484751
+2026-04-19 15:09:20,484 | INFO | ============================================================
+2026-04-19 15:09:20,485 | INFO | ============================================================
+2026-04-19 15:09:20,485 | INFO | Data Quality Run: DQ_20260419_150920
+2026-04-19 15:09:20,485 | INFO | ============================================================
+2026-04-19 15:09:20,824 | INFO | 
+ -- fact_orders --
+2026-04-19 15:09:20,889 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 15:20:02,057 | INFO | ============================================================
+2026-04-19 15:20:02,057 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 15:20:02,058 | INFO | Started: 2026-04-19 15:20:02.057980
+2026-04-19 15:20:02,058 | INFO | ============================================================
+2026-04-19 15:20:02,058 | INFO | ============================================================
+2026-04-19 15:20:02,059 | INFO | Data Quality Run: DQ_20260419_152002
+2026-04-19 15:20:02,059 | INFO | ============================================================
+2026-04-19 15:20:02,197 | INFO | 
+ -- fact_orders --
+2026-04-19 15:20:02,246 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 15:21:00,416 | INFO | ============================================================
+2026-04-19 15:21:00,416 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 15:21:00,416 | INFO | Started: 2026-04-19 15:21:00.416839
+2026-04-19 15:21:00,417 | INFO | ============================================================
+2026-04-19 15:21:00,417 | INFO | ============================================================
+2026-04-19 15:21:00,417 | INFO | Data Quality Run: DQ_20260419_152100
+2026-04-19 15:21:00,418 | INFO | ============================================================
+2026-04-19 15:21:00,563 | INFO | 
+ -- fact_orders --
+2026-04-19 15:21:00,601 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 15:21:01,586 | INFO | 
+--- dim_customer ---
+2026-04-19 15:21:01,605 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 15:21:01,755 | INFO | 
+--- dim_product ---
+2026-04-19 15:21:01,762 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 15:21:01,925 | INFO | 
+============================================================
+2026-04-19 15:21:01,926 | INFO | DQ Run Complete: DQ_20260419_152100
+2026-04-19 15:21:01,926 | INFO | Total: 19 | Pass: 18 | Fail: 1 | Critical: 0
+2026-04-19 15:21:01,926 | INFO | Overall Status: WARNING
+2026-04-19 15:21:01,927 | INFO | ============================================================
+2026-04-19 15:21:01,928 | INFO | Running monitoring dashboard...
+2026-04-19 15:31:53,673 | INFO | ============================================================
+2026-04-19 15:31:53,673 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 15:31:53,674 | INFO | Started: 2026-04-19 15:31:53.674090
+2026-04-19 15:31:53,674 | INFO | ============================================================
+2026-04-19 15:31:53,674 | INFO | ============================================================
+2026-04-19 15:31:53,675 | INFO | Data Quality Run: DQ_20260419_153153
+2026-04-19 15:31:53,675 | INFO | ============================================================
+2026-04-19 15:31:53,834 | INFO | 
+ -- fact_orders --
+2026-04-19 15:31:53,895 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 15:31:54,744 | INFO | 
+--- dim_customer ---
+2026-04-19 15:31:54,770 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 15:31:55,208 | INFO | 
+--- dim_product ---
+2026-04-19 15:31:55,217 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 15:31:55,350 | INFO | 
+============================================================
+2026-04-19 15:31:55,350 | INFO | DQ Run Complete: DQ_20260419_153153
+2026-04-19 15:31:55,351 | INFO | Total: 19 | Pass: 18 | Fail: 1 | Critical: 0
+2026-04-19 15:31:55,352 | INFO | Overall Status: WARNING
+2026-04-19 15:31:55,352 | INFO | ============================================================
+2026-04-19 15:31:55,353 | INFO | Running monitoring dashboard...
+2026-04-19 16:00:08,452 | INFO | ============================================================
+2026-04-19 16:00:08,453 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 16:00:08,453 | INFO | Started: 2026-04-19 16:00:08.453690
+2026-04-19 16:00:08,454 | INFO | ============================================================
+2026-04-19 16:00:08,454 | INFO | ============================================================
+2026-04-19 16:00:08,454 | INFO | Data Quality Run: DQ_20260419_160008
+2026-04-19 16:00:08,454 | INFO | ============================================================
+2026-04-19 16:00:08,552 | INFO | 
+ -- fact_orders --
+2026-04-19 16:00:08,596 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 16:00:08,764 | INFO | [PASS] fact_orders.order_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:00:08,807 | INFO | [PASS] fact_orders.customer_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:00:08,852 | INFO | [PASS] fact_orders.product_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:00:08,873 | INFO | [PASS] fact_orders.date_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:00:08,925 | INFO | [PASS] fact_orders.price_brl [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:00:08,970 | INFO | [PASS] fact_orders.price_inr [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:00:09,012 | INFO | [PASS] fact_orders.price_inr [value_range(0, None)] (100.0% / threshold 99.0%)
+2026-04-19 16:00:09,061 | INFO | [PASS] fact_orders.review_score [value_range(1, 5)] (100.0% / threshold 95.0%)
+2026-04-19 16:00:09,111 | INFO | [PASS] fact_orders.delivery_days [value_range(0, 365)] (100.0% / threshold 95.0%)
+2026-04-19 16:00:09,209 | INFO | [FAIL] fact_orders.order_status [allowed_values] (1.54% / threshold 99.0%)
+2026-04-19 16:00:09,336 | INFO | [PASS] fact_orders.customer_sk [rel_integrity -> dim_customer.customer_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:00:09,468 | INFO | [PASS] fact_orders.product_sk [rel_integrity -> dim_product.product_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:00:09,558 | INFO | [PASS] fact_orders.seller_sk [rel_integrity -> dim_seller.seller_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:00:09,565 | INFO | 
+--- dim_customer ---
+2026-04-19 16:00:09,586 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 16:00:09,591 | INFO | [PASS] dim_customer.customer_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:00:09,654 | INFO | [PASS] dim_customer.customer_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:00:09,691 | INFO | [PASS] dim_customer.state [not_null] (100.0% / threshold 95.0%)
+2026-04-19 16:00:09,697 | INFO | 
+--- dim_product ---
+2026-04-19 16:00:09,703 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 16:00:09,708 | INFO | [PASS] dim_product.product_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:00:09,763 | INFO | [PASS] dim_product.product_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:00:09,784 | INFO | [PASS] dim_product.weight_g [value_range(0, None)] (100.0% / threshold 95.0%)
+2026-04-19 16:00:09,804 | INFO | 
+============================================================
+2026-04-19 16:00:09,805 | INFO | DQ Run Complete: DQ_20260419_160008
+2026-04-19 16:00:09,805 | INFO | Total: 19 | Pass: 18 | Fail: 1 | Critical: 0
+2026-04-19 16:00:09,806 | INFO | Overall Status: WARNING
+2026-04-19 16:00:09,807 | INFO | ============================================================
+2026-04-19 16:00:09,808 | INFO | Running monitoring dashboard...
+2026-04-19 16:08:39,376 | INFO | ============================================================
+2026-04-19 16:08:39,377 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 16:08:39,378 | INFO | Started: 2026-04-19 16:08:39.378183
+2026-04-19 16:08:39,378 | INFO | ============================================================
+2026-04-19 16:08:39,379 | INFO | ============================================================
+2026-04-19 16:08:39,379 | INFO | Data Quality Run: DQ_20260419_160839
+2026-04-19 16:08:39,379 | INFO | ============================================================
+2026-04-19 16:08:39,612 | INFO | 
+ -- fact_orders --
+2026-04-19 16:08:39,663 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 16:08:39,829 | INFO | [PASS] fact_orders.order_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:08:39,873 | INFO | [PASS] fact_orders.customer_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:08:39,918 | INFO | [PASS] fact_orders.product_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:08:39,944 | INFO | [PASS] fact_orders.date_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:08:39,980 | INFO | [PASS] fact_orders.price_brl [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:08:40,015 | INFO | [PASS] fact_orders.price_inr [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:08:40,050 | INFO | [PASS] fact_orders.price_inr [value_range(0, None)] (100.0% / threshold 99.0%)
+2026-04-19 16:08:40,100 | INFO | [PASS] fact_orders.review_score [value_range(1, 5)] (100.0% / threshold 95.0%)
+2026-04-19 16:08:40,152 | INFO | [PASS] fact_orders.delivery_days [value_range(0, 365)] (100.0% / threshold 95.0%)
+2026-04-19 16:08:40,251 | INFO | [FAIL] fact_orders.order_status [allowed_values] (1.54% / threshold 99.0%)
+2026-04-19 16:08:40,374 | INFO | [PASS] fact_orders.customer_sk [rel_integrity -> dim_customer.customer_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:08:40,494 | INFO | [PASS] fact_orders.product_sk [rel_integrity -> dim_product.product_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:08:40,574 | INFO | [PASS] fact_orders.seller_sk [rel_integrity -> dim_seller.seller_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:08:40,581 | INFO | 
+--- dim_customer ---
+2026-04-19 16:08:40,600 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 16:08:40,604 | INFO | [PASS] dim_customer.customer_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:08:40,667 | INFO | [PASS] dim_customer.customer_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:08:40,708 | INFO | [PASS] dim_customer.state [not_null] (100.0% / threshold 95.0%)
+2026-04-19 16:08:40,717 | INFO | 
+--- dim_product ---
+2026-04-19 16:08:40,727 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 16:08:40,736 | INFO | [PASS] dim_product.product_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:08:40,798 | INFO | [PASS] dim_product.product_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:08:40,819 | INFO | [PASS] dim_product.weight_g [value_range(0, None)] (100.0% / threshold 95.0%)
+2026-04-19 16:08:40,839 | INFO | 
+============================================================
+2026-04-19 16:08:40,840 | INFO | DQ Run Complete: DQ_20260419_160839
+2026-04-19 16:08:40,840 | INFO | Total: 19 | Pass: 18 | Fail: 1 | Critical: 0
+2026-04-19 16:08:40,841 | INFO | Overall Status: WARNING
+2026-04-19 16:08:40,841 | INFO | ============================================================
+2026-04-19 16:08:40,843 | INFO | Running monitoring dashboard...
+2026-04-19 16:08:40,991 | INFO | Dashboard Saved: reports/monitoring_20260419_160840.html
+2026-04-19 16:08:41,323 | INFO | 
+Pipeline complete.
+2026-04-19 16:08:41,324 | INFO | DQ Status:  WARNING
+2026-04-19 16:08:41,325 | INFO | Report:     reports/monitoring_20260419_160840.html
+2026-04-19 16:08:41,325 | INFO | ============================================================
+2026-04-19 16:47:29,663 | INFO | ============================================================
+2026-04-19 16:47:29,664 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 16:47:29,665 | INFO | Started: 2026-04-19 16:47:29.665600
+2026-04-19 16:47:29,665 | INFO | ============================================================
+2026-04-19 16:47:29,666 | INFO | ============================================================
+2026-04-19 16:47:29,666 | INFO | Data Quality Run: DQ_20260419_164729
+2026-04-19 16:47:29,666 | INFO | ============================================================
+2026-04-19 16:47:29,949 | INFO | 
+ -- fact_orders --
+2026-04-19 16:47:29,999 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 16:47:30,175 | INFO | [PASS] fact_orders.order_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:47:30,236 | INFO | [PASS] fact_orders.customer_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:47:30,301 | INFO | [PASS] fact_orders.product_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:47:30,318 | INFO | [PASS] fact_orders.date_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:47:30,371 | INFO | [PASS] fact_orders.price_brl [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:47:30,422 | INFO | [PASS] fact_orders.price_inr [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:47:30,483 | INFO | [PASS] fact_orders.price_inr [value_range(0, None)] (100.0% / threshold 99.0%)
+2026-04-19 16:47:30,569 | INFO | [PASS] fact_orders.review_score [value_range(1, 5)] (100.0% / threshold 95.0%)
+2026-04-19 16:47:30,643 | INFO | [PASS] fact_orders.delivery_days [value_range(0, 365)] (100.0% / threshold 95.0%)
+2026-04-19 16:47:30,757 | INFO | [FAIL] fact_orders.order_status [allowed_values] (1.54% / threshold 99.0%)
+2026-04-19 16:47:31,153 | INFO | [PASS] fact_orders.customer_sk [rel_integrity -> dim_customer.customer_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:47:31,414 | INFO | [PASS] fact_orders.product_sk [rel_integrity -> dim_product.product_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:47:31,562 | INFO | [PASS] fact_orders.seller_sk [rel_integrity -> dim_seller.seller_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:47:31,568 | INFO | 
+--- dim_customer ---
+2026-04-19 16:47:31,619 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 16:47:31,630 | INFO | [PASS] dim_customer.customer_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:47:31,837 | INFO | [PASS] dim_customer.customer_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:47:31,870 | INFO | [PASS] dim_customer.state [not_null] (100.0% / threshold 95.0%)
+2026-04-19 16:47:31,884 | INFO | 
+--- dim_product ---
+2026-04-19 16:47:31,900 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 16:47:31,908 | INFO | [PASS] dim_product.product_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:47:31,990 | INFO | [PASS] dim_product.product_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:47:32,014 | INFO | [PASS] dim_product.weight_g [value_range(0, None)] (100.0% / threshold 95.0%)
+2026-04-19 16:47:32,097 | INFO | 
+============================================================
+2026-04-19 16:47:32,097 | INFO | DQ Run Complete: DQ_20260419_164729
+2026-04-19 16:47:32,098 | INFO | Total: 19 | Pass: 18 | Fail: 1 | Critical: 0
+2026-04-19 16:47:32,098 | INFO | Overall Status: WARNING
+2026-04-19 16:47:32,099 | INFO | ============================================================
+2026-04-19 16:47:32,100 | INFO | Running monitoring dashboard...
+2026-04-19 16:47:32,230 | INFO | Dashboard Saved: reports/monitoring_20260419_164732.html
+2026-04-19 16:47:32,512 | INFO | 
+Pipeline complete.
+2026-04-19 16:47:32,514 | INFO | DQ Status:  WARNING
+2026-04-19 16:47:32,514 | INFO | Report:     reports/monitoring_20260419_164732.html
+2026-04-19 16:47:32,514 | INFO | ============================================================
+2026-04-19 16:48:44,258 | INFO | ============================================================
+2026-04-19 16:48:44,258 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 16:48:44,259 | INFO | Started: 2026-04-19 16:48:44.259143
+2026-04-19 16:48:44,259 | INFO | ============================================================
+2026-04-19 16:48:44,259 | INFO | ============================================================
+2026-04-19 16:48:44,260 | INFO | Data Quality Run: DQ_20260419_164844
+2026-04-19 16:48:44,260 | INFO | ============================================================
+2026-04-19 16:48:44,511 | INFO | 
+ -- fact_orders --
+2026-04-19 16:48:44,612 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 16:48:44,753 | INFO | [PASS] fact_orders.order_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:48:44,813 | INFO | [PASS] fact_orders.customer_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:48:44,860 | INFO | [PASS] fact_orders.product_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:48:44,876 | INFO | [PASS] fact_orders.date_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:48:44,922 | INFO | [PASS] fact_orders.price_brl [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:48:45,037 | INFO | [PASS] fact_orders.price_inr [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:48:45,071 | INFO | [PASS] fact_orders.price_inr [value_range(0, None)] (100.0% / threshold 99.0%)
+2026-04-19 16:48:45,120 | INFO | [PASS] fact_orders.review_score [value_range(1, 5)] (100.0% / threshold 95.0%)
+2026-04-19 16:48:45,173 | INFO | [PASS] fact_orders.delivery_days [value_range(0, 365)] (100.0% / threshold 95.0%)
+2026-04-19 16:48:45,274 | INFO | [FAIL] fact_orders.order_status [allowed_values] (1.54% / threshold 99.0%)
+2026-04-19 16:48:45,457 | INFO | [PASS] fact_orders.customer_sk [rel_integrity -> dim_customer.customer_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:48:45,614 | INFO | [PASS] fact_orders.product_sk [rel_integrity -> dim_product.product_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:48:45,709 | INFO | [PASS] fact_orders.seller_sk [rel_integrity -> dim_seller.seller_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:48:45,717 | INFO | 
+--- dim_customer ---
+2026-04-19 16:48:45,751 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 16:48:45,760 | INFO | [PASS] dim_customer.customer_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:48:45,874 | INFO | [PASS] dim_customer.customer_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:48:45,910 | INFO | [PASS] dim_customer.state [not_null] (100.0% / threshold 95.0%)
+2026-04-19 16:48:45,918 | INFO | 
+--- dim_product ---
+2026-04-19 16:48:45,928 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 16:48:45,936 | INFO | [PASS] dim_product.product_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:48:46,000 | INFO | [PASS] dim_product.product_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:48:46,024 | INFO | [PASS] dim_product.weight_g [value_range(0, None)] (100.0% / threshold 95.0%)
+2026-04-19 16:48:46,050 | INFO | 
+============================================================
+2026-04-19 16:48:46,051 | INFO | DQ Run Complete: DQ_20260419_164844
+2026-04-19 16:48:46,051 | INFO | Total: 19 | Pass: 18 | Fail: 1 | Critical: 0
+2026-04-19 16:48:46,051 | INFO | Overall Status: WARNING
+2026-04-19 16:48:46,052 | INFO | ============================================================
+2026-04-19 16:48:46,053 | INFO | Running monitoring dashboard...
+2026-04-19 16:49:22,701 | INFO | ============================================================
+2026-04-19 16:49:22,701 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 16:49:22,701 | INFO | Started: 2026-04-19 16:49:22.701738
+2026-04-19 16:49:22,702 | INFO | ============================================================
+2026-04-19 16:49:22,702 | INFO | ============================================================
+2026-04-19 16:49:22,702 | INFO | Data Quality Run: DQ_20260419_164922
+2026-04-19 16:49:22,702 | INFO | ============================================================
+2026-04-19 16:49:22,940 | INFO | 
+ -- fact_orders --
+2026-04-19 16:49:23,016 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 16:49:23,128 | INFO | [PASS] fact_orders.order_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:49:23,178 | INFO | [PASS] fact_orders.customer_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:49:23,225 | INFO | [PASS] fact_orders.product_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:49:23,255 | INFO | [PASS] fact_orders.date_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:49:23,312 | INFO | [PASS] fact_orders.price_brl [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:49:23,347 | INFO | [PASS] fact_orders.price_inr [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:49:23,396 | INFO | [PASS] fact_orders.price_inr [value_range(0, None)] (100.0% / threshold 99.0%)
+2026-04-19 16:49:23,478 | INFO | [PASS] fact_orders.review_score [value_range(1, 5)] (100.0% / threshold 95.0%)
+2026-04-19 16:49:23,574 | INFO | [PASS] fact_orders.delivery_days [value_range(0, 365)] (100.0% / threshold 95.0%)
+2026-04-19 16:49:23,697 | INFO | [FAIL] fact_orders.order_status [allowed_values] (1.54% / threshold 99.0%)
+2026-04-19 16:49:24,400 | INFO | [PASS] fact_orders.customer_sk [rel_integrity -> dim_customer.customer_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:49:24,878 | INFO | [PASS] fact_orders.product_sk [rel_integrity -> dim_product.product_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:49:25,024 | INFO | [PASS] fact_orders.seller_sk [rel_integrity -> dim_seller.seller_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:49:25,051 | INFO | 
+--- dim_customer ---
+2026-04-19 16:49:25,083 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 16:49:25,090 | INFO | [PASS] dim_customer.customer_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:49:25,330 | INFO | [PASS] dim_customer.customer_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:49:25,359 | INFO | [PASS] dim_customer.state [not_null] (100.0% / threshold 95.0%)
+2026-04-19 16:49:25,367 | INFO | 
+--- dim_product ---
+2026-04-19 16:49:25,379 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 16:49:25,388 | INFO | [PASS] dim_product.product_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:49:25,471 | INFO | [PASS] dim_product.product_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:49:25,493 | INFO | [PASS] dim_product.weight_g [value_range(0, None)] (100.0% / threshold 95.0%)
+2026-04-19 16:49:25,518 | INFO | 
+============================================================
+2026-04-19 16:49:25,519 | INFO | DQ Run Complete: DQ_20260419_164922
+2026-04-19 16:49:25,519 | INFO | Total: 19 | Pass: 18 | Fail: 1 | Critical: 0
+2026-04-19 16:49:25,520 | INFO | Overall Status: WARNING
+2026-04-19 16:49:25,520 | INFO | ============================================================
+2026-04-19 16:49:25,522 | INFO | Running monitoring dashboard...
+2026-04-19 16:51:05,104 | INFO | ============================================================
+2026-04-19 16:51:05,105 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 16:51:05,105 | INFO | Started: 2026-04-19 16:51:05.105489
+2026-04-19 16:51:05,105 | INFO | ============================================================
+2026-04-19 16:51:05,106 | INFO | ============================================================
+2026-04-19 16:51:05,106 | INFO | Data Quality Run: DQ_20260419_165105
+2026-04-19 16:51:05,106 | INFO | ============================================================
+2026-04-19 16:51:05,304 | INFO | 
+ -- fact_orders --
+2026-04-19 16:51:05,357 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 16:51:05,470 | INFO | [PASS] fact_orders.order_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:51:05,575 | INFO | [PASS] fact_orders.customer_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:51:05,614 | INFO | [PASS] fact_orders.product_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:51:05,629 | INFO | [PASS] fact_orders.date_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:51:05,668 | INFO | [PASS] fact_orders.price_brl [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:51:05,699 | INFO | [PASS] fact_orders.price_inr [not_null] (100.0% / threshold 99.0%)
+2026-04-19 16:51:05,742 | INFO | [PASS] fact_orders.price_inr [value_range(0, None)] (100.0% / threshold 99.0%)
+2026-04-19 16:51:05,798 | INFO | [PASS] fact_orders.review_score [value_range(1, 5)] (100.0% / threshold 95.0%)
+2026-04-19 16:51:05,857 | INFO | [PASS] fact_orders.delivery_days [value_range(0, 365)] (100.0% / threshold 95.0%)
+2026-04-19 16:51:05,961 | INFO | [FAIL] fact_orders.order_status [allowed_values] (1.54% / threshold 99.0%)
+2026-04-19 16:51:06,180 | INFO | [PASS] fact_orders.customer_sk [rel_integrity -> dim_customer.customer_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:51:06,590 | INFO | [PASS] fact_orders.product_sk [rel_integrity -> dim_product.product_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:51:06,802 | INFO | [PASS] fact_orders.seller_sk [rel_integrity -> dim_seller.seller_sk] (100.0% / threshold 100.0%)
+2026-04-19 16:51:06,849 | INFO | 
+--- dim_customer ---
+2026-04-19 16:51:06,894 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 16:51:06,903 | INFO | [PASS] dim_customer.customer_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:51:07,096 | INFO | [PASS] dim_customer.customer_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:51:07,140 | INFO | [PASS] dim_customer.state [not_null] (100.0% / threshold 95.0%)
+2026-04-19 16:51:07,158 | INFO | 
+--- dim_product ---
+2026-04-19 16:51:07,169 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 16:51:07,178 | INFO | [PASS] dim_product.product_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 16:51:07,265 | INFO | [PASS] dim_product.product_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 16:51:07,291 | INFO | [PASS] dim_product.weight_g [value_range(0, None)] (100.0% / threshold 95.0%)
+2026-04-19 16:51:07,328 | INFO | 
+============================================================
+2026-04-19 16:51:07,329 | INFO | DQ Run Complete: DQ_20260419_165105
+2026-04-19 16:51:07,329 | INFO | Total: 19 | Pass: 18 | Fail: 1 | Critical: 0
+2026-04-19 16:51:07,330 | INFO | Overall Status: WARNING
+2026-04-19 16:51:07,330 | INFO | ============================================================
+2026-04-19 16:51:07,332 | INFO | Running monitoring dashboard...
+2026-04-19 16:51:07,422 | INFO | Dashboard Saved: reports/monitoring_20260419_165107.html
+2026-04-19 16:51:07,724 | INFO | 
+Pipeline complete.
+2026-04-19 16:51:07,726 | INFO | DQ Status:  WARNING
+2026-04-19 16:51:07,727 | INFO | Report:     reports/monitoring_20260419_165107.html
+2026-04-19 16:51:07,727 | INFO | ============================================================
+2026-04-19 17:24:39,760 | INFO | ============================================================
+2026-04-19 17:24:39,761 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 17:24:39,761 | INFO | Started: 2026-04-19 17:24:39.761530
+2026-04-19 17:24:39,761 | INFO | ============================================================
+2026-04-19 17:24:39,762 | INFO | ============================================================
+2026-04-19 17:24:39,762 | INFO | Data Quality Run: DQ_20260419_172439
+2026-04-19 17:24:39,762 | INFO | ============================================================
+2026-04-19 17:24:40,024 | INFO | 
+ -- fact_orders --
+2026-04-19 17:24:40,087 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 17:24:40,209 | INFO | [PASS] fact_orders.order_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:24:40,253 | INFO | [PASS] fact_orders.customer_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:24:40,406 | INFO | [PASS] fact_orders.product_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:24:40,422 | INFO | [PASS] fact_orders.date_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:24:40,466 | INFO | [PASS] fact_orders.price_brl [not_null] (100.0% / threshold 99.0%)
+2026-04-19 17:24:40,505 | INFO | [PASS] fact_orders.price_inr [not_null] (100.0% / threshold 99.0%)
+2026-04-19 17:24:40,541 | INFO | [PASS] fact_orders.price_inr [value_range(0, None)] (100.0% / threshold 99.0%)
+2026-04-19 17:24:40,593 | INFO | [PASS] fact_orders.review_score [value_range(1, 5)] (100.0% / threshold 95.0%)
+2026-04-19 17:24:40,659 | INFO | [PASS] fact_orders.delivery_days [value_range(0, 365)] (100.0% / threshold 95.0%)
+2026-04-19 17:24:40,781 | INFO | [FAIL] fact_orders.order_status [allowed_values] (1.54% / threshold 99.0%)
+2026-04-19 17:24:40,967 | INFO | [PASS] fact_orders.customer_sk [rel_integrity -> dim_customer.customer_sk] (100.0% / threshold 100.0%)
+2026-04-19 17:24:41,184 | INFO | [PASS] fact_orders.product_sk [rel_integrity -> dim_product.product_sk] (100.0% / threshold 100.0%)
+2026-04-19 17:24:41,336 | INFO | [PASS] fact_orders.seller_sk [rel_integrity -> dim_seller.seller_sk] (100.0% / threshold 100.0%)
+2026-04-19 17:24:41,361 | INFO | 
+--- dim_customer ---
+2026-04-19 17:24:41,400 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 17:24:41,408 | INFO | [PASS] dim_customer.customer_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:24:41,670 | INFO | [PASS] dim_customer.customer_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 17:24:41,702 | INFO | [PASS] dim_customer.state [not_null] (100.0% / threshold 95.0%)
+2026-04-19 17:24:41,710 | INFO | 
+--- dim_product ---
+2026-04-19 17:24:41,716 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 17:24:41,721 | INFO | [PASS] dim_product.product_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:24:41,813 | INFO | [PASS] dim_product.product_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 17:24:41,838 | INFO | [PASS] dim_product.weight_g [value_range(0, None)] (100.0% / threshold 95.0%)
+2026-04-19 17:24:41,855 | INFO | 
+============================================================
+2026-04-19 17:24:41,856 | INFO | DQ Run Complete: DQ_20260419_172439
+2026-04-19 17:24:41,857 | INFO | Total: 19 | Pass: 18 | Fail: 1 | Critical: 0
+2026-04-19 17:24:41,857 | INFO | Overall Status: WARNING
+2026-04-19 17:24:41,857 | INFO | ============================================================
+2026-04-19 17:24:41,858 | INFO | Running monitoring dashboard...
+2026-04-19 17:24:42,022 | INFO | Dashboard Saved: reports/monitoring_20260419_172441.html
+2026-04-19 17:24:42,336 | INFO | 
+Pipeline complete.
+2026-04-19 17:24:42,338 | INFO | DQ Status:  WARNING
+2026-04-19 17:24:42,339 | INFO | Report:     reports/monitoring_20260419_172441.html
+2026-04-19 17:24:42,340 | INFO | ============================================================
+2026-04-19 17:31:08,856 | INFO | ============================================================
+2026-04-19 17:31:08,857 | INFO | ECOMMERCE ANALYTICS — FULL PIPELINE
+2026-04-19 17:31:08,858 | INFO | Started: 2026-04-19 17:31:08.857986
+2026-04-19 17:31:08,858 | INFO | ============================================================
+2026-04-19 17:31:08,858 | INFO | ============================================================
+2026-04-19 17:31:08,859 | INFO | Data Quality Run: DQ_20260419_173108
+2026-04-19 17:31:08,859 | INFO | ============================================================
+2026-04-19 17:31:09,888 | INFO | 
+ -- fact_orders --
+2026-04-19 17:31:09,936 | INFO | DQ Checker: fact_orders (112,650 rows)
+2026-04-19 17:31:10,068 | INFO | [PASS] fact_orders.order_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:31:10,120 | INFO | [PASS] fact_orders.customer_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:31:10,163 | INFO | [PASS] fact_orders.product_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:31:10,187 | INFO | [PASS] fact_orders.date_sk [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:31:10,229 | INFO | [PASS] fact_orders.price_brl [not_null] (100.0% / threshold 99.0%)
+2026-04-19 17:31:10,287 | INFO | [PASS] fact_orders.price_inr [not_null] (100.0% / threshold 99.0%)
+2026-04-19 17:31:10,320 | INFO | [PASS] fact_orders.price_inr [value_range(0, None)] (100.0% / threshold 99.0%)
+2026-04-19 17:31:10,387 | INFO | [PASS] fact_orders.review_score [value_range(1, 5)] (100.0% / threshold 95.0%)
+2026-04-19 17:31:10,441 | INFO | [PASS] fact_orders.delivery_days [value_range(0, 365)] (100.0% / threshold 95.0%)
+2026-04-19 17:31:10,572 | INFO | [PASS] fact_orders.order_status [allowed_values] (99.36% / threshold 99.0%)
+2026-04-19 17:31:10,746 | INFO | [PASS] fact_orders.customer_sk [rel_integrity -> dim_customer.customer_sk] (100.0% / threshold 100.0%)
+2026-04-19 17:31:10,998 | INFO | [PASS] fact_orders.product_sk [rel_integrity -> dim_product.product_sk] (100.0% / threshold 100.0%)
+2026-04-19 17:31:11,142 | INFO | [PASS] fact_orders.seller_sk [rel_integrity -> dim_seller.seller_sk] (100.0% / threshold 100.0%)
+2026-04-19 17:31:11,164 | INFO | 
+--- dim_customer ---
+2026-04-19 17:31:11,198 | INFO | DQ Checker: dim_customer (99,441 rows)
+2026-04-19 17:31:11,205 | INFO | [PASS] dim_customer.customer_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:31:11,372 | INFO | [PASS] dim_customer.customer_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 17:31:11,424 | INFO | [PASS] dim_customer.state [not_null] (100.0% / threshold 95.0%)
+2026-04-19 17:31:11,439 | INFO | 
+--- dim_product ---
+2026-04-19 17:31:11,452 | INFO | DQ Checker: dim_product (32,951 rows)
+2026-04-19 17:31:11,461 | INFO | [PASS] dim_product.product_id [not_null] (100.0% / threshold 100.0%)
+2026-04-19 17:31:11,620 | INFO | [PASS] dim_product.product_id [no_duplicates] (100.0% / threshold 100.0%)
+2026-04-19 17:31:11,639 | INFO | [PASS] dim_product.weight_g [value_range(0, None)] (100.0% / threshold 95.0%)
+2026-04-19 17:31:11,657 | INFO | 
+============================================================
+2026-04-19 17:31:11,657 | INFO | DQ Run Complete: DQ_20260419_173108
+2026-04-19 17:31:11,658 | INFO | Total: 19 | Pass: 19 | Fail: 0 | Critical: 0
+2026-04-19 17:31:11,658 | INFO | Overall Status: PASSED
+2026-04-19 17:31:11,658 | INFO | ============================================================
+2026-04-19 17:31:11,659 | INFO | Running monitoring dashboard...
+2026-04-19 17:31:11,733 | INFO | Dashboard Saved: reports/monitoring_20260419_173111.html
+2026-04-19 17:31:11,991 | INFO | 
+Pipeline complete.
+2026-04-19 17:31:11,992 | INFO | DQ Status:  PASSED
+2026-04-19 17:31:11,992 | INFO | Report:     reports/monitoring_20260419_173111.html
+2026-04-19 17:31:11,993 | INFO | ============================================================
